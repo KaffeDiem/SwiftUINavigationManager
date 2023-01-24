@@ -19,7 +19,7 @@ enum Route {
 
 @main
 struct ExampleSPMProjectApp: App {
-    @StateObject private let navigationManager = NavigationManager<Route>()
+    @StateObject private var navigationManager = NavigationManager<Route>()
     
     var body: some Scene {
         WindowGroup {
