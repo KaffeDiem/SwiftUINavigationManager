@@ -5,6 +5,8 @@ public class NavigationManager<Route: Hashable>: ObservableObject {
     
     private var stack = [0]
     
+    public init() {}
+    
     public func present(_ view: Route) {
         path.append(view)
     }
