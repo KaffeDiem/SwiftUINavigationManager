@@ -37,30 +37,27 @@ import SwiftUI
 import SwiftUINavigationManager
 
 struct ContentView: View {
-    
     @EnvironmentObject private var navigationManager: NavigationManager<Route>
     
     var body: some View {
-        NavigationStack(path: $navigationManager.path) {
-            Button(action: {
-                navigationManager.present(Route.detail)
-            }, label: {
-                Text("Go to detail")
-            })
-            .navigationDestination(for: Route.self) { route in
-                switch route {
-                case .main:
-                    ContentView()
-                case .detail:
-                    ContentDetailView()
-                }
+        Button(action: {
+            navigationManager.present(Route.detail)
+        }, label: {
+            Text("Go to detail")
+        })
+        .navigationDestination(for: Route.self) { route in
+            switch route {
+            case .main:
+                ContentView()
+            case .detail:
+                ContentDetailView()
             }
         }
+        .makeNavigation(navigationManager)
     }
 }
 
 struct ContentDetailView: View {
-    
     @EnvironmentObject private var navigationManager: NavigationManager<Route>
     
     var body: some View {
