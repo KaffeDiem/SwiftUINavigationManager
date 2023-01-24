@@ -1,7 +1,7 @@
 import SwiftUI
 
 public class NavigationManager<Route: Hashable>: ObservableObject {
-    @Published var path = NavigationPath()
+    @Published public var path = NavigationPath()
     
     private var stack = [0]
     
