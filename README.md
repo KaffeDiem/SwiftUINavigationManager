@@ -1,9 +1,10 @@
 # NavigationManager
 
-### What is it?
-A more simple type of navigation in SwiftUI.
+A coordinator inspired navigation type in SwiftUI. 
 
-### Getting started
+Navigate your SwiftUI app by routing and use a simple push and pop method to present and dismiss views. 
+
+# Getting started
 Add this package to your Xcode project by tapping `File->Add Packages...` and enter the package URL.
 
 In the root of your app create the environment object.
