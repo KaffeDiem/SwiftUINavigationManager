@@ -46,6 +46,7 @@ struct ContentView: View {
         }, label: {
             Text("Go to detail")
         })
+        // Set the apps destinations here
         .navigationDestination(for: Route.self) { route in
             switch route {
             case .main:
@@ -54,6 +55,7 @@ struct ContentView: View {
                 ContentDetailView()
             }
         }
+        // Make sure to put this in the root below the navigationDestionation ^
         .makeNavigation(navigationManager)
     }
 }
