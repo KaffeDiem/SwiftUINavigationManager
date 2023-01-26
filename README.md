@@ -1,6 +1,6 @@
-# NavigationManager
+# NavigationManager Swift Package
 
-A coordinator inspired navigation type in SwiftUI. 
+A coordinator inspired navigation type in SwiftUI which integrates easily as a Swift Package.
 
 Navigate your SwiftUI app by routing and use a simple push and pop method to present and dismiss views. 
 
@@ -80,6 +80,7 @@ struct ContentDetailView: View {
 ```
 
 # Features
+
 Present a new view.
 
 `func present(_ view: Route)`
