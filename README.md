@@ -5,8 +5,8 @@ A coordinator inspired navigation type in SwiftUI which integrates easily as a S
 Navigate your SwiftUI app by routing and use a simple push and pop method to present and dismiss views. 
 
 # Future 
-- [] Ability to add multiple child navigation managers to a single master manager. 
-- [] Make setting up the navigation manager even easier.
+- [ ] Ability to add multiple child navigation managers to a single master manager. 
+- [ ] Make setting up the navigation manager even easier.
 
 # Getting started
 Add this package to your Xcode project by tapping `File->Add Packages...` and enter the package URL.
