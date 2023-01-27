@@ -45,6 +45,7 @@ public class NavigationManager<Route: Hashable>: ObservableObject {
     ///
     /// - Note: Will not do anything if the current view is the root.
     public func dismiss() {
+        guard path.count > 0 else { return }
         path.removeLast()
         if path.count == stack.last {
             stack.removeLast()
